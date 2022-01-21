@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"books","dependencies":{"bp":{"version":"0.1.1-beta"},"dotenv":{"version":"14.2.0"},"express":{"version":"4.17.2"},"pg":{"version":"8.7.1"}}}

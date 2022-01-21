@@ -1,0 +1,18 @@
+---
+fullnameOverride: customers-db
+global:
+  postgresql:
+    postgresqlUsername: postgres
+    postgresqlPassword: postgres
+initdbUser: postgres
+initdbPassword: postgres
+initdbScripts:
+  dbinit.sql: |
+    CREATE DATABASE "customers" OWNER postgres;
+    \connect customers
+    CREATE TABLE "customers"
+    (
+        id serial primary key,
+        "name" character varying,
+        "surname" character varying
+    );
